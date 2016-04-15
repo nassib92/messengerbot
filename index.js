@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 var jsonParser = bodyParser.json();
 var request = require('request');
 
-var token = "EAAYQMTwxZAbIBADBQHAjq0hjH7VaiEnimcBXZA55KkQmg4OMOvDG9HyPrzDRdmNT0Hsk4niTkrJXR2Gs6YCRt9vX3ZAZAJ8MU25YFtBiW789lSCLNzgPwAxOKOUgvHfOfNXiUgmZBcVMfzIB2iCA7b0ZBYErAZAxyJpDAAcc7ZBdTQZDZD";
+var token = "EAAHYY2fZBGAgBACbLIB9YSjzu2qpZA0oiMOyIZCzIpLAvjVIiilKQ8YaNPhTs0pqKE1MLQxZAgyW5euVahH9VkrpbZCThVlp23Sg2jEST1qTs2LwozQZBaBo83ZCoCZBpmktHSVW7dZBgN75DkH8cYmMZCzKT09UbwCRrGHoqdcxlrvgZDZD";
 
 app.set('port', (process.env.PORT || 5000));
 
