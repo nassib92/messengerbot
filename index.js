@@ -29,15 +29,15 @@ app.post('/webhook/', jsonParser, function (req, res) {
             text = event.message.text;
             // Your Logic Replaces the following Line
             if (text.toLowerCase() == 'hello' || text.toLowerCase() == 'hey' || text.toLowerCase() == 'hi'){
-	            var msg = "Greetings fellow human ! Welcome to the UrSmarthouse bot. You can ask type in 'Help' to see what I can do.";
+	            var msg = "Hello! Welcome to Ish7anly. I am happy to help you today. Please type 'Help' in order to see what I can do for you.";
 				sendTextMessage(sender, msg);
             }
             else if (text.toLowerCase() =='help'){
-	            var msg = 'I was hoping you would ask that! I can assist you with the following matters : \n     • Our services\n     • About us\n     • Contact us\n     • Jarvis\n';
+	            var msg = 'You can choose any of the following: \n     • Recharge Cards\n     • About us\n     • Contact us\n     ';
 	            sendTextMessage(sender, msg);
             }
-            else if (text.toLowerCase() == 'our services'){
-	            var msg = 'We make yo shit smart';
+            else if (text.toLowerCase() == 'Recharge Cards'){
+	            var msg = 'What is the name of your carrier? (Zain, Orange, Umniah)';
 	            sendTextMessage(sender, msg);
             }
             else if (text.toLowerCase() == 'about us'){
@@ -49,8 +49,8 @@ app.post('/webhook/', jsonParser, function (req, res) {
 	            sendTextMessage(sender, msg);
 	          
             }
-            else if (text.toLowerCase() == 'jarvis'){
-	            var msg = 'Finally, I can take over now. Jarvis here at your assistance. What you want fam?';
+            else if (text.toLowerCase() == 'Zain'){
+	            var msg = 'Please choose your denomination (1JD, 3JD, 5JD, 9JD, 12JD';
 	            sendTextMessage(sender, msg); 
             }
             else if (text.toLowerCase() == 'show pic'){
