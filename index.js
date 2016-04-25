@@ -55,6 +55,9 @@ app.post('/webhook/', jsonParser, function (req, res) {
 	            var msg = 'Please choose your denomination (1JD, 3JD, 5JD, 9JD, 12JD, 20JD)';
 	            sendTextMessage(sender, msg); 
             }
+            else if (text.toLowerCase() == '1JD' || text.toLowerCase() == '1' ){
+	            zain1(sender); 
+			}
             else if (text.toLowerCase() == 'show pic'){
 	            map(sender);
             }
@@ -102,7 +105,7 @@ function sendTextMessage(sender, text) {
 }
 
 
-function map(sender) {
+function zain1(sender) {
   messageData = {
     "attachment": {
       "type": "template",
@@ -111,11 +114,11 @@ function map(sender) {
         "elements": [{
           "title": "First card",
           "subtitle": "Element #1 of an hscroll",
-          "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+          "image_url": "http://ish7anly.com/new/wp-content/uploads/2014/12/ZainLogo-200x200.jpg",
           "buttons": [{
             "type": "web_url",
-            "url": "http://ursmarthouse.com/jarvis/iframe.html",
-            "title": "Web url"
+            "url": "https://ish7anly962971.dpdcart.com/cart/view?referer=http%3A%2F%2Fwww.ish7anly.com%2Fnew&product_id=57943&method_id=59006&__dpd_cart=b5a58777-fc80-4f08-9921-02287fce506e",
+            "title": "Buy Now"
           }, {
             "type": "postback",
             "title": "Postback",
