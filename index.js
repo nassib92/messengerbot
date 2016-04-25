@@ -39,7 +39,7 @@ app.post('/webhook/', jsonParser, function (req, res) {
 	            sendTextMessage(sender, msg);
             }
             else if (text.toLowerCase() == 'Recharge Cards'){
-	            var msg = 'What is the name of your carrier? (Zain, Orange, Umniah)';
+	            var msg = "What is the name of your carrier? (Zain, Orange, Umniah)";
 	            sendTextMessage(sender, msg);
             }
             else if (text.toLowerCase() == 'about us'){
