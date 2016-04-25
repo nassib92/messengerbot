@@ -38,7 +38,7 @@ app.post('/webhook/', jsonParser, function (req, res) {
 	            var msg = 'You can choose any of the following: \n     • Recharge Cards\n     • About us\n     • Contact us\n     ';
 	            sendTextMessage(sender, msg);
             }
-            else if (text.toLowerCase() == 'Recharge Cards'){
+            else if (text.toLowerCase() == 'recharge cards'){
 	            var msg = "What is the name of your carrier? (Zain, Orange, Umniah)";
 	            sendTextMessage(sender, msg);
             }
@@ -51,7 +51,7 @@ app.post('/webhook/', jsonParser, function (req, res) {
 	            sendTextMessage(sender, msg);
 	          
             }
-            else if (text.toLowerCase() == 'Zain'){
+            else if (text.toLowerCase() == 'zain'){
 	            var msg = 'Please choose your denomination (1JD, 3JD, 5JD, 9JD, 12JD, 20JD)';
 	            sendTextMessage(sender, msg); 
             }
