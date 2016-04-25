@@ -55,7 +55,7 @@ app.post('/webhook/', jsonParser, function (req, res) {
 	            var msg = 'Please choose your denomination (1JD, 3JD, 5JD, 9JD, 12JD, 20JD)';
 	            sendTextMessage(sender, msg); 
             }
-            else if (text.toLowerCase() == '1JD' || text.toLowerCase() == '1' ){
+            else if (text.toLowerCase() == '1jd' || text.toLowerCase() == '1' ){
 	            zain1(sender); 
 			}
             else if (text.toLowerCase() == 'show pic'){
@@ -112,8 +112,8 @@ function zain1(sender) {
       "payload": {
         "template_type": "generic",
         "elements": [{
-          "title": "First card",
-          "subtitle": "Element #1 of an hscroll",
+          "title": "Zain 1 JD",
+          "subtitle": "Awesome",
           "image_url": "http://ish7anly.com/new/wp-content/uploads/2014/12/ZainLogo-200x200.jpg",
           "buttons": [{
             "type": "web_url",
