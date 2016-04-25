@@ -52,7 +52,7 @@ app.post('/webhook/', jsonParser, function (req, res) {
 	          
             }
             else if (text.toLowerCase() == 'Zain'){
-	            var msg = 'Please choose your denomination (1JD, 3JD, 5JD, 9JD, 12JD';
+	            var msg = 'Please choose your denomination (1JD, 3JD, 5JD, 9JD, 12JD, 20JD';
 	            sendTextMessage(sender, msg); 
             }
             else if (text.toLowerCase() == 'show pic'){
